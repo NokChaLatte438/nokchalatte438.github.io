@@ -3,73 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NokCha&#39;s Portfolio</title>
-    <meta name="description" content="지금까지 이런 사람은 없었다" />
-    <meta name="author" content="NokCha" />
-    <!-- 소셜미디어 공유용 메타 태그 (open graph) -->
-    <meta property="og:title" content="녹차의 포트폴리오" />
+    <title>Ryuzy&#39;s Portfolio</title>
+    <meta name="description" content="우주에서 가장 뛰어난 AI 개발자" />
+    <meta name="author" content="Ryuzy" />
+    <!-- 소셜 미디어 공유용 메타 태그(Open Graph) -->
+    <meta property="og:title" content="류지의 포트폴리오" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="배포후 생성된 url" />
-    <meta property="og:image" content="배포후 생성된 이미지 url" />
+    <meta property="og:url" content="배포후 생성된 URL" />
+    <meta property="og:image" content="배포후 생성된 이미지 URL" />
     <link
       rel="shortcut icon"
       href="./images/profile.ico"
       type="images/x-icon"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/133260cff9.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <!-- Header start-->
+    <!-- Header 시작-->
     <header class="header">
       <div class="header__logo">
         <img class="header__logo__img" src="./images/profile.ico" alt="Logo" />
-        <h1 class="header__logo__title"><a href="#">NoKCha</a></h1>
+        <h1 class="header__logo__title"><a href="#home">Ryuzy</a></h1>
       </div>
       <nav class="header__nav">
-        <ul>
+        <ul class="header__menu">
           <li><a href="#home" class="header__menu__item active">홈으로</a></li>
-          <li><a href="#about " class="header__menu__item">NoKCha</a></li>
+          <li><a href="#about" class="header__menu__item">류지</a></li>
           <li><a href="#skill" class="header__menu__item">기술</a></li>
-          <li><a href="#work" class="header__menu__item">protfolio</a></li>
+          <li><a href="#work" class="header__menu__item">포트폴리오</a></li>
           <li><a href="#license" class="header__menu__item">자격증</a></li>
           <li><a href="#contact" class="header__menu__item">연락처</a></li>
         </ul>
       </nav>
     </header>
-    <!-- Header end -->
+    <!-- Header 끝-->
 
-    <!-- Main start -->
+    <!-- Main 시작 -->
     <main>
-      <!-- Home start -->
+      <!-- Home 시작 -->
       <section id="home">
         <img
           class="home__avatar"
           src="./images/profile.jpg"
-          alt="NoKCha's Profile"
+          alt="Ryuzy's profile"
         />
         <h2 class="home__title">
-          Hi, It's <strong class="home__title--string">NoKCha</strong>
+          안녕하세요!<br />
+          <strong class="home__title--string">류지</strong>입니다.
         </h2>
-        <p class="home__description">뭐시기 뭐시기</p>
+        <p class="home__description">
+          우주에서 가장 뛰어난 AI 개발자 류지입니다!!
+        </p>
         <a class="home__contact" href="#contact">연락처</a>
       </section>
-      <!-- Home end -->
+      <!-- Home 끝 -->
 
-      <!-- About start -->
+      <!-- about 시작 -->
       <section id="about" class="section max-container">
-        <h2>NoKCha</h2>
+        <h2 class="title">류지</h2>
         <p class="description">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate
-          eaque ipsa vel! Voluptatem saepe maxime voluptate odio exercitationem
-          ut corporis incidunt sint quia, tempore eum quibusdam molestias,
-          necessitatibus sit illo?Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Soluta reprehenderit itaque et reiciendis repellat
-          fugiat, sed molestiae in sapiente error quis autem atque, voluptatibus
-          suscipit quos natus doloremque labore voluptas?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          earum fuga quam delectus eius? Dolores ut nihil rerum vero sed eum
+          ipsa cum ea ipsam, eligendi dolorum corrupti quidem odio? Lorem ipsum,
+          dolor sit amet consectetur adipisicing elit. Impedit non eaque et
+          earum libero omnis minima quisquam adipisci error quos hic obcaecati,
+          id tenetur voluptate facere beatae assumenda expedita alias!
         </p>
         <ul class="skills">
           <li class="skill">
@@ -88,87 +91,111 @@
             <p>Tensorflow, Python, Pytorch, Numpy</p>
           </li>
         </ul>
+
         <ul class="jobs">
           <li class="job">
-            <img class="job__img" src="./images/AD.png" alt="AD Technology" />
+            <img class="job__img" src="./images/nc.png" alt="NCSoft Logo" />
             <div>
-              <p class="job__name">AD Technology</p>
-              <p class="job__period">지인이 재직중</p>
+              <p class="job__name">엔씨소프트 시스템 엔지니어</p>
+              <p class="job__period">2015 ~ 2017</p>
             </div>
           </li>
           <li class="job">
-            <img class="job__img" src="./images/spaceX.png" alt="spaceX" />
+            <img class="job__img" src="./images/sk.png" alt="SK Logo" />
             <div>
-              <p class="job__name">spaceX</p>
-              <p class="job__period">화성 갈끄니까~</p>
+              <p class="job__name">SK 플랫폼 엔지니어</p>
+              <p class="job__period">2012 ~ 2015</p>
             </div>
           </li>
         </ul>
       </section>
-      <!-- About end -->
+      <!-- about 끝 -->
 
-      <section id="skills">
-        <h2>기술</h2>
-        <p>언어 및 도구</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          veritatis soluta excepturi pariatur perferendis placeat ipsum, quos
-          ratione debitis dolore. Deserunt culpa dicta, unde iure dolores ipsa
-          accusamus libero quo!
-        </p>
-        <div>
-          <section>
-            <h3>언어</h3>
-            <ul>
-              <li>
-                <div><span>HTML</span><span>1%</span></div>
-                <div><div style="width: 100%"></div></div>
-              </li>
-              <li>
-                <div><span>CSS</span><span>0.5%</span></div>
-                <div><div style="width: 90%"></div></div>
-              </li>
-              <li>
-                <div><span>JavaScript</span><span>0.4%</span></div>
-                <div><div style="width: 80%"></div></div>
-              </li>
-              <li>
-                <div><span>Java</span><span>0.3%</span></div>
-                <div><div style="width: 80%"></div></div>
-              </li>
-              <li>
-                <div><span>Python</span><span>0.2%</span></div>
-                <div><div style="width: 80%"></div></div>
-              </li>
-            </ul>
-          </section>
+      <!-- skills 시작 -->
+      <section id="skills" class="section">
+        <div class="max-container">
+          <h2 class="title">기술</h2>
+          <p class="description">언어 및 도구</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
+            pariatur aliquam in ab. Et optio hic recusandae ipsum, nihil quae
+            cupiditate distinctio, temporibus maxime quia, blanditiis eaque?
+            Facere, ullam fuga.
+          </p>
+          <div class="tools">
+            <section class="tools__coding">
+              <h3 class="tools__title">언어</h3>
+              <ul>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>HTML</span><span>100%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 100%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>CSS</span><span>90%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>JavaScript</span><span>80%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 80%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>Java</span><span>70%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 70%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>Python</span><span>90%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
+                </li>
+              </ul>
+            </section>
 
-          <section>
-            <h3>도구</h3>
-            <ul>
-              <li>Visual Studio Code</li>
-              <li>IntelliJ</li>
-              <li>Colab</li>
-              <li>Github</li>
-              <li>Xcode</li>
-            </ul>
-          </section>
+            <section class="tools__tools">
+              <h3 class="tools__title">도구</h3>
+              <ul>
+                <li>Visual Studio Code</li>
+                <li>IntelliJ</li>
+                <li>Colab</li>
+                <li>Jupyter</li>
+                <li>Xcode</li>
+              </ul>
+            </section>
 
-          <section>
-            <h3>기타</h3>
-            <ul>
-              <li>Git</li>
-              <li>Math</li>
-            </ul>
-          </section>
+            <section class="tools_etc">
+              <h3 class="tools__title">기타</h3>
+              <ul>
+                <li>Git</li>
+                <li>SLACK</li>
+                <li>Math</li>
+              </ul>
+            </section>
+          </div>
         </div>
       </section>
-      <!-- skill end -->
+      <!-- skills 끝 -->
 
-      <!-- work start -->
-
+      <!-- work 시작 -->
       <section id="work">
-        <h2>portfolio</h2>
+        <h2>포트폴리오</h2>
         <p>Projects</p>
         <ul>
           <li>
@@ -185,80 +212,155 @@
           </li>
         </ul>
         <ul>
-          <li><a href="#" target="_blank">클론코딩 사이트</a></li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="./images/Tmap.jpg" alt="project 이미지" />
+              <div>
+                <h3>Project #1</h3>
+                <p>티맵</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="./images/Tmap.jpg" alt="project 이미지" />
+              <div>
+                <h3>Project #1</h3>
+                <p>티맵</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="./images/Tmap.jpg" alt="project 이미지" />
+              <div>
+                <h3>Project #1</h3>
+                <p>티맵</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="./images/Tmap.jpg" alt="project 이미지" />
+              <div>
+                <h3>Project #1</h3>
+                <p>티맵</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="./images/Tmap.jpg" alt="project 이미지" />
+              <div>
+                <h3>Project #1</h3>
+                <p>티맵</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="./images/Tmap.jpg" alt="project 이미지" />
+              <div>
+                <h3>Project #1</h3>
+                <p>티맵</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="./images/Tmap.jpg" alt="project 이미지" />
+              <div>
+                <h3>Project #1</h3>
+                <p>티맵</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <img src="./images/Tmap.jpg" alt="project 이미지" />
+              <div>
+                <h3>Project #1</h3>
+                <p>티맵</p>
+              </div>
+            </a>
+          </li>
         </ul>
       </section>
-      <!-- work end -->
+      <!-- work 끝 -->
 
-      <!-- license start -->
-
+      <!-- license 시작 -->
       <section id="license">
         <h2>자격증</h2>
-        <p>국가기술 자격증</p>
+        <p>국가 기술 자격증</p>
         <ul>
-          <li>
-            <img src="./images/license.png" alt="자격증" />
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                delectus recusandae in impedit adipisci. Ipsum aperiam sed,
-                perspiciatis libero ad blanditiis porro voluptate rem, modi
-                officia odio ullam placeat possimus?
-              </p>
-              <a href="#">서울시 경찰청</a>
-            </div>
-          </li>
           <li>
             <img src="./images/license.png" alt="정보처리기사 자격증" />
             <div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                delectus recusandae in impedit adipisci. Ipsum aperiam sed,
-                perspiciatis libero ad blanditiis porro voluptate rem, modi
-                officia odio ullam placeat possimus?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                hic minima tenetur quasi necessitatibus natus, quisquam autem
+                reprehenderit voluptates, error culpa laboriosam iste explicabo
+                fugit, deserunt aliquam possimus voluptatem dolor!
               </p>
-              <a href="#">한국산업인력공단</a>
+              <p><a href="#"></a>산업인력공단</p>
+            </div>
+          </li>
+          <li>
+            <img src="./images/license.png" alt="데이터분석기사 자격증" />
+            <div>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                hic minima tenetur quasi necessitatibus natus, quisquam autem
+                reprehenderit voluptates, error culpa laboriosam iste explicabo
+                fugit, deserunt aliquam possimus voluptatem dolor!
+              </p>
+              <p><a href="#"></a>한국데이터산업진흥원</p>
             </div>
           </li>
           <li>
             <img src="./images/license.png" alt="ADSP 자격증" />
             <div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
-                delectus recusandae in impedit adipisci. Ipsum aperiam sed,
-                perspiciatis libero ad blanditiis porro voluptate rem, modi
-                officia odio ullam placeat possimus?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                hic minima tenetur quasi necessitatibus natus, quisquam autem
+                reprehenderit voluptates, error culpa laboriosam iste explicabo
+                fugit, deserunt aliquam possimus voluptatem dolor!
               </p>
-              <a href="#">한국데이터산업진흥원</a>
+              <p><a href="#"></a>한국데이터산업진흥원</p>
             </div>
           </li>
         </ul>
-        <!-- arrow up -->
-        <aside>
-          <a href="#home" title="위로"><i class="fa-solid fa-arrow-up"></i></a>
-        </aside>
-        <!-- arrow up end -->
       </section>
-      <!-- license end -->
-    </main>
-    <!-- Main end -->
+      <!-- license 끝 -->
 
-    <!-- Footer start -->
+      <!-- Arrow Up 시작 -->
+      <aside>
+        <a href="#home" title="위로">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </aside>
+      <!-- Arrow Up 끝 -->
+    </main>
+    <!-- Main 끝 -->
+
+    <!-- Footer 시작 -->
     <footer id="contact">
       <h2>연락주세요!</h2>
-      <p>rlatlsaud438@gmail.com</p>
+      <p>ryuzy@naver.com</p>
       <ul>
         <li>
-          <a
-            href="https://github.com/NokChaLatte438"
-            target="_blank"
-            title="깃허브"
+          <a href="https://github.com/ryuzypia" target="_blank" title="깃허브"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/ryuzypia" target="_blank" title="깃허브"
             ><i class="fa-brands fa-github"></i
           ></a>
         </li>
       </ul>
-      <p>&copy; NokCha - All rights reserved.</p>
+      <p>&copy; Ryuzy - All rights reserved</p>
     </footer>
-    <!-- Footer end -->
+    <!-- Footer 끝 -->
   </body>
 </html>
