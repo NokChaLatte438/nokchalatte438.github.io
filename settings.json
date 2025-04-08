@@ -1,0 +1,18 @@
+{
+  "editor.fontSize": 20,
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  },
+  "editor.tokenColorCustomizations": {
+    "comments": "#00be0a"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "workbench.startupEditor": "none",
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDelete": false,
+  "json.schemas": [],
+  "css.enabledLanguages": ["HTML", "javascript"]
+}
