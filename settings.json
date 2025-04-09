@@ -14,5 +14,10 @@
   "security.workspace.trust.untrustedFiles": "open",
   "explorer.confirmDelete": false,
   "json.schemas": [],
-  "css.enabledLanguages": ["HTML", "javascript"]
+  "css.enabledLanguages": ["HTML", "javascript"],
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    "javascript": "node"
+  }
 }
