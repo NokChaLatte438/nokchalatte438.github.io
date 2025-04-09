@@ -26,13 +26,13 @@
 :root {
   --color-primary: var(--color-black);
   --color-primary-variant: var(--color-gray);
-  --color-accent: var(--color-blue);
+  --color-accent: var(--color-green);
   --color-accent-variant: var(--color-orange);
   --color-text: var(--color-white);
 
   --color-white: #fff;
   --color-black: #050a13;
-  --color-blue: #32fff5;
+  --color-green: #14f100;
   --color-orange: #fd6413;
   --color-gray: #1b1e26;
 
@@ -232,7 +232,7 @@ button:focus {
 }
 #skills {
   background-color: var(--color-primary-variant);
-  color: var(--color-text);
+  color: var(--color-white);
 }
 .tools {
   display: grid;
@@ -242,15 +242,19 @@ button:focus {
   overflow: hidden;
 }
 .tools__title {
-  color: var(--color-accent);
+  color: var(--color-black);
   margin: 1rem 0;
   font-size: 1.2rem;
 }
+.tools__text {
+  color: var(--color-black);
+}
+
 .tools__coding {
   grid-row: span 2;
   /* 2개의 행을 차지하도록 설정 */
   padding: 1rem;
-  background-color: var(--color-primary);
+  background-color: var(--color-white);
 }
 .bar {
   display: flex;
@@ -273,11 +277,11 @@ button:focus {
 }
 .tools__tools {
   padding: 1rem;
+  background-color: var(--color-white);
 }
 .tools__etc {
   padding: 1rem;
-  background-color: var(--color-primary);
-  filter: brightness(150%);
+  background-color: var(--color-white);
 }
 
 #work {
