@@ -6,6 +6,23 @@
   font-style: normal;
 }
 
+@keyframes slideUp {
+  0% {
+    transform: translateY(70px);
+    opacity: 100%;
+  }
+
+  0.1% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+
+  100% {
+    transform: translateY(70px);
+    opacity: 0;
+  }
+}
+
 :root {
   --color-primary: var(--color-black);
   --color-primary-variant: var(--color-gray);
@@ -15,7 +32,7 @@
 
   --color-white: #fff;
   --color-black: #050a13;
-  --color-blue: #03e8f9;
+  --color-blue: #32fff5;
   --color-orange: #fd6413;
   --color-gray: #1b1e26;
 
@@ -116,8 +133,10 @@ button:focus {
 #home {
   background-color: var(--color-primary);
   color: var(--color-text);
-  padding: 7rem 1rem 5rem;
+  padding: 9rem 1rem 5rem;
   text-align: center;
+  animation: slideUp 0.7s alternate-reverse ease-in-out;
+  animation-fill-mode: backwards;
 }
 
 .home__avatar {
@@ -172,12 +191,15 @@ button:focus {
   border-radius: 1rem;
   cursor: default;
   box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.4);
+  animation: slideUp 0.7s reverse ease-in-out;
+  animation-delay: 3s;
+  animation-fill-mode: backwards;
 }
 .skill__icon {
   font-size: 4rem;
   margin: 1rem 0;
   color: var(--color-accent);
-  transition: all 300ms ease;
+  transition: all 200ms ease;
 }
 .skill:hover .skill__icon {
   transform: rotate(-15deg) scale(1.2);
@@ -256,4 +278,94 @@ button:focus {
   padding: 1rem;
   background-color: var(--color-primary);
   filter: brightness(150%);
+}
+
+#work {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+.categories {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem;
+  gap: 1rem;
+}
+.category {
+  position: relative;
+  color: var(--color-text);
+  font-size: 1.1rem;
+  padding: 0.5rem 3rem;
+  border-radius: 4px;
+  border: 1px solid var(--color-accent);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.category--selected {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}
+.category__count {
+  opacity: 0%;
+  position: absolute;
+  top: -20px;
+  right: 16px;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 100%;
+  background-color: var(--color-accent-variant);
+  color: var(--color-text);
+  transition: all 250ms ease-in;
+}
+.category--selected .category__count .category:hover {
+  opacity: 0;
+  top: 1;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2 1fr);
+  gap: 1rem;
+}
+.project {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.project__img {
+  width: 100%;
+}
+.project__metadata {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1;
+  height: 1;
+  background-color: var(--color-black);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms ease-in;
+  transform: translateY(-10px);
+}
+.project__metadata:hover {
+  opacity: 0.8;
+  transform: translateY(0px);
+}
+
+/* after : 요소 뒤에 가상의 요소를 하나 만들어주는 선택자 */
+/* content :"" 아무 내용도 없는 가상의 요소를 만듦 */
+/* display : block 가상 요소를 블록요소처럼 만들어서 크기를 줄 수 있게 함 */
+
+.project__title:after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin: 0.5rem 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--color-accent);
 }

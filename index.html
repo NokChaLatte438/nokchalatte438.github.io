@@ -7,22 +7,27 @@
     <meta name="description" content="우주에서 가장 뛰어난 AI 개발자" />
     <meta name="author" content="Ryuzy" />
     <!-- 소셜 미디어 공유용 메타 태그(Open Graph) -->
-    <meta property="og:title" content="류지의 포트폴리오" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="배포후 생성된 URL" />
-    <meta property="og:image" content="배포후 생성된 이미지 URL" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Ryuzy's Website" />
+    <meta property="og:title" content="Ryuzy's Website" />
+    <meta property="og:url" content="https://ryuzypia.github.io/" />
+    <meta property="og:description" content="안녕하세요! 류지입니다." />
+    <meta property="og:image" content="" />
+
     <link
       rel="shortcut icon"
       href="./images/profile.ico"
       type="images/x-icon"
     />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/133260cff9.js"
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <!-- Header 시작-->
     <header class="header">
@@ -34,7 +39,7 @@
         <ul class="header__menu">
           <li><a href="#home" class="header__menu__item active">홈으로</a></li>
           <li><a href="#about" class="header__menu__item">NokCha</a></li>
-          <li><a href="#skill" class="header__menu__item">기술</a></li>
+          <li><a href="#skills" class="header__menu__item">기술</a></li>
           <li><a href="#work" class="header__menu__item">포트폴리오</a></li>
           <li><a href="#license" class="header__menu__item">자격증</a></li>
           <li><a href="#contact" class="header__menu__item">연락처</a></li>
@@ -190,97 +195,139 @@
       <!-- skills 끝 -->
 
       <!-- work 시작 -->
-      <section id="work">
-        <h2>포트폴리오</h2>
-        <p>Projects</p>
-        <ul>
-          <li>
-            <button>ALL <span>10</span></button>
-          </li>
-          <li>
-            <button>Front-end <span>3</span></button>
-          </li>
-          <li>
-            <button>Mobile <span>3</span></button>
-          </li>
-          <li>
-            <button>AI <span>4</span></button>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/Tmap.jpg" alt="project 이미지" />
-              <div>
-                <h3>Project #1</h3>
-                <p>티맵</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/Tmap.jpg" alt="project 이미지" />
-              <div>
-                <h3>Project #1</h3>
-                <p>티맵</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/Tmap.jpg" alt="project 이미지" />
-              <div>
-                <h3>Project #1</h3>
-                <p>티맵</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/Tmap.jpg" alt="project 이미지" />
-              <div>
-                <h3>Project #1</h3>
-                <p>티맵</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/Tmap.jpg" alt="project 이미지" />
-              <div>
-                <h3>Project #1</h3>
-                <p>티맵</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/Tmap.jpg" alt="project 이미지" />
-              <div>
-                <h3>Project #1</h3>
-                <p>티맵</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/Tmap.jpg" alt="project 이미지" />
-              <div>
-                <h3>Project #1</h3>
-                <p>티맵</p>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" target="_blank">
-              <img src="./images/Tmap.jpg" alt="project 이미지" />
-              <div>
-                <h3>Project #1</h3>
-                <p>티맵</p>
-              </div>
-            </a>
-          </li>
-        </ul>
+      <section id="work" class="section">
+        <div class="max-container">
+          <h2 class="title">포트폴리오</h2>
+          <p class="description">Projects</p>
+          <ul class="categories">
+            <li>
+              <button class="category category--selected">
+                ALL <span class="category__count">10</span>
+              </button>
+            </li>
+            <li>
+              <button class="category">
+                Front-end <span class="category__count">3</span>
+              </button>
+            </li>
+            <li>
+              <button class="category">
+                Mobile <span class="category__count">3</span>
+              </button>
+            </li>
+            <li>
+              <button class="category">
+                AI <span class="category__count">4</span>
+              </button>
+            </li>
+          </ul>
+          <ul class="projects">
+            <li>
+              <a href="#" target="_blank">
+                <img
+                  src="./images/Tmap.jpg"
+                  alt="project 이미지"
+                  class="project"
+                />
+                <div>
+                  <h3 class="project__metadata">Project #1</h3>
+                  <p class="project__title">티맵</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img
+                  src="./images/Tmap.jpg"
+                  alt="project 이미지"
+                  class="project"
+                />
+                <div>
+                  <h3 class="project__metadata">Project #1</h3>
+                  <p class="project__title">티맵</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img
+                  src="./images/Tmap.jpg"
+                  alt="project 이미지"
+                  class="project"
+                />
+                <div>
+                  <h3 class="project__metadata">Project #1</h3>
+                  <p class="project__title">티맵</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img
+                  src="./images/Tmap.jpg"
+                  alt="project 이미지"
+                  class="project"
+                />
+                <div>
+                  <h3 class="project__metadata">Project #1</h3>
+                  <p class="project__title">티맵</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img
+                  src="./images/Tmap.jpg"
+                  alt="project 이미지"
+                  class="project"
+                />
+                <div>
+                  <h3 class="project__metadata">Project #1</h3>
+                  <p class="project__title">티맵</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img
+                  src="./images/Tmap.jpg"
+                  alt="project 이미지"
+                  class="project"
+                />
+                <div>
+                  <h3 class="project__metadata">Project #1</h3>
+                  <p class="project__title">티맵</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img
+                  src="./images/Tmap.jpg"
+                  alt="project 이미지"
+                  class="project"
+                />
+                <div>
+                  <h3 class="project__metadata">Project #1</h3>
+                  <p class="project__title">티맵</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img
+                  src="./images/Tmap.jpg"
+                  alt="project 이미지"
+                  class="project"
+                />
+                <div>
+                  <h3 class="project__metadata">Project #1</h3>
+                  <p class="project__title">티맵</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- work 끝 -->
 
