@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>indexedDB</title>
+    <style></style>
   </head>
   <body>
     <h2>📝 내 메모장 (IndexedDB)</h2>
     <input type="text" id="noteInput" placeholder="메모 입력" />
     <button onclick="saveNote()">저장</button>
+
+    <h3>할 일 목록</h3>
 
     <ul id="noteList"></ul>
 
@@ -65,9 +68,14 @@
           const cursor = e.target.result;
           if (cursor) {
             const li = document.createElement("li");
+            const bt1 = document.createElement("button");
+            const bt2 = document.createElement("button");
+
             li.textContent = `[${cursor.value.created.toLocaleString()}] ${
               cursor.value.text
             }`;
+            bt1.textContent = "수정";
+            bt2.textContent = "삭제";
             list.appendChild(li);
             cursor.continue();
           }
