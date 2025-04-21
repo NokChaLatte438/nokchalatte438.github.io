@@ -1,5 +1,11 @@
 const header = document.querySelector(".header");
 const headerHeight = header.offsetHeight; // 요소의 총 높이
+const categories = document.querySelector("categories");
+const projectsContainer = document.querySelector(".projects");
+const projects = document.querySelectorAll(".project");
+
+console.log(headerHeight);
+
 // console.log(headerHeight); // 70
 document.addEventListener("scroll", () => {
   if (window.scrollY > headerHeight) {
@@ -27,7 +33,7 @@ document.addEventListener("scroll", () => {
 
 arrowUp.addEventListener("click", () => {
   e.preventDefault();
-  window.scrollTo({ topw: 0, behavior: "smooth" });
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 const navbarMenu = document.querySelector(".header__menu");
@@ -39,3 +45,31 @@ navbarToggle.addEventListener("click", () => {
 navbarMenu.addEventListener("click", () => {
   navbarMenu.classList.remove("open");
 });
+
+categories.addEventListener("click", (e) => {
+  const filter = e.target.dataset.category;
+  //   console.log(filter);
+  //   console.log(e.target);
+
+  if (filter == null) {
+    return;
+  }
+  activeSelection(e.target);
+  filterProjects(filter);
+});
+
+function activeSelection(target) {
+  const active = document.querySelector(".category--selected");
+  active.classList.remove("category--selected");
+  target.classList.add("category--selected");
+}
+
+function filterProjects(filter) {
+  projects.forEach((project) => {
+    if (filter == "all" || filter == projects.dataset.type) {
+      project.computedStyleMap.display = "block";
+    } else {
+      project.computedStyleMap.display = "none";
+    }
+  });
+}

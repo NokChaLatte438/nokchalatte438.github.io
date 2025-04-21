@@ -66,7 +66,7 @@
             <strong class="home__title--strong">NoKCha</strong>입니다.
           </h2>
           <p class="home__description">
-            우주에서 가장 뛰어난 AI 개발자 류지입니다!!
+            우주에서 가장 뛰어난 AI 개발용 AI입니다!!
           </p>
           <a class="home__contact" href="#contact">연락처</a>
         </div>
@@ -211,7 +211,7 @@
           <ul class="categories">
             <li>
               <button class="category category--selected" data-category="all">
-                ALL <span class="category__count">10</span>
+                ALL <span class="category__count">8</span>
               </button>
             </li>
             <li>
@@ -226,12 +226,12 @@
             </li>
             <li>
               <button class="category" data-category="ai">
-                AI <span class="category__count">4</span>
+                AI <span class="category__count">2</span>
               </button>
             </li>
           </ul>
           <ul class="projects">
-            <li class="project">
+            <li class="project" datatype="front-end">
               <a href="#" target="_blank">
                 <img
                   src="./images/Tmap.jpg"
@@ -240,11 +240,11 @@
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #1</h3>
-                  <p>티맵</p>
+                  <p>프론트엔드 작업1</p>
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" datatype="front-end">
               <a href="#" target="_blank">
                 <img
                   src="./images/Tmap.jpg"
@@ -252,12 +252,12 @@
                   class="project__img"
                 />
                 <div class="project__metadata">
-                  <h3 class="project__title">Project #1</h3>
-                  <p>티맵</p>
+                  <h3 class="project__title">Project #2</h3>
+                  <p>프론트엔드 작업2</p>
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" datatype="front-end">
               <a href="#" target="_blank">
                 <img
                   src="./images/Tmap.jpg"
@@ -265,12 +265,12 @@
                   class="project__img"
                 />
                 <div class="project__metadata">
-                  <h3 class="project__title">Project #1</h3>
-                  <p>티맵</p>
+                  <h3 class="project__title">Project #3</h3>
+                  <p>프론트엔드 작업3</p>
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" datatype="mobile">
               <a href="#" target="_blank">
                 <img
                   src="./images/Tmap.jpg"
@@ -278,12 +278,12 @@
                   class="project__img"
                 />
                 <div class="project__metadata">
-                  <h3 class="project__title">Project #1</h3>
-                  <p>티맵</p>
+                  <h3 class="project__title">Project #4</h3>
+                  <p>모바일1</p>
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" datatype="mobile">
               <a href="#" target="_blank">
                 <img
                   src="./images/Tmap.jpg"
@@ -291,12 +291,12 @@
                   class="project__img"
                 />
                 <div class="project__metadata">
-                  <h3 class="project__title">Project #1</h3>
-                  <p>티맵</p>
+                  <h3 class="project__title">Project #5</h3>
+                  <p>모바일2</p>
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" datatype="mobile">
               <a href="#" target="_blank">
                 <img
                   src="./images/Tmap.jpg"
@@ -304,12 +304,12 @@
                   class="project__img"
                 />
                 <div class="project__metadata">
-                  <h3 class="project__title">Project #1</h3>
-                  <p>티맵</p>
+                  <h3 class="project__title">Project #6</h3>
+                  <p>모바일3</p>
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" datatype="ai">
               <a href="#" target="_blank">
                 <img
                   src="./images/Tmap.jpg"
@@ -317,12 +317,12 @@
                   class="project__img"
                 />
                 <div class="project__metadata">
-                  <h3 class="project__title">Project #1</h3>
-                  <p>티맵</p>
+                  <h3 class="project__title">Project #7</h3>
+                  <p>AI 작업1</p>
                 </div>
               </a>
             </li>
-            <li class="project">
+            <li class="project" datatype="ai">
               <a href="#" target="_blank">
                 <img
                   src="./images/Tmap.jpg"
@@ -330,8 +330,8 @@
                   class="project__img"
                 />
                 <div class="project__metadata">
-                  <h3 class="project__title">Project #1</h3>
-                  <p>티맵</p>
+                  <h3 class="project__title">Project #8</h3>
+                  <p>AI 작업2</p>
                 </div>
               </a>
             </li>
@@ -432,9 +432,11 @@
             ></a>
           </li>
         </ul>
-        <p>&copy; Ryuzy - All rights reserved</p>
+        <p>&copy; NokCha - All rights reserved</p>
       </div>
     </footer>
     <!-- Footer 끝 -->
+    <script src="./main.js"></script>
+    <!-- 너무 앞에 있으면 DOM이 완전히 로드되지 않아 header, 등 모든 값을 null로 반환할 수 있음 -->
   </body>
 </html>
