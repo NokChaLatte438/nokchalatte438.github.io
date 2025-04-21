@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>지진 정보 조회</title>
+  </head>
+  <body>
+    <h1>지진정보 조회</h1>
+    <label for="region">지역 선택: </label>
+    <select id="region">
+      <option value="서울 중구|1111000000">서울 중구</option>
+      <option value="부산 중구|2611000000">부산 중구</option>
+      <option value="대구 중구|2711000000">대구 중구</option>
+      <option value="인천 중구|2811000000">인천 중구</option>
+      <option value="광주 동구|2911000000">광주 동구</option>
+      <option value="대전 중구|3011000000">대전 중구</option>
+      <option value="울산 남구|3114000000">울산 남구</option>
+      <option value="세종|3611000000">세종</option>
+      <option value="강릉시|4215000000">강릉시</option>
+      <option value="청주시|4311000000">청주시</option>
+      <option value="전주시|4511000000">전주시</option>
+      <option value="목포시|4611000000">목포시</option>
+      <option value="창원시|4812000000">창원시</option>
+      <option value="제주 제주시|5011000000">제주 제주시</option>
+      <option value="제주 서귀포시|5013000000">제주 서귀포시</option>
+    </select>
+
+    <button onclick="loadData()">조회하기</button>
+
+    <div id="weatherInfo">데이터를 불러오는 중입니다...</div>
+
+    <script>
+      const now = new Date();
+      const serviceKey =
+        "cRdq5VXLtLBwCnbYfv4sNrSASRWl46s4yxaF0vUPo7Gr2I+v2+32HKuK9GSVnj20pWLRcyLG8/SqLzUeqXZsMw==";
+
+      function loadData() {
+        const url = `http://apis.data.go.kr/1360000/EqkInfoService/getEqkMsgList
+      ?serviceKey=${encodeURIComponent(serviceKey)}&numOfRows=10&pageNo=1
+      &fromTmFc=20151001&toTmFc=20151013 
+      `;
+        console.log(url);
+
+        fetch(url)
+          .then((res) => res.json())
+          .then((data) => {
+            console.log("전체 응답 구조 확인:", JSON.stringify(data, null, 2));
+          });
+      }
+    </script>
+  </body>
+</html>

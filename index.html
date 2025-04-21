@@ -20,7 +20,7 @@
       href="./images/profile.ico"
       type="images/x-icon"
     />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/133260cff9.js"
@@ -45,6 +45,9 @@
           <li><a href="#contact" class="header__menu__item">연락처</a></li>
         </ul>
       </nav>
+      <button class="header__toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </header>
     <!-- Header 끝-->
 
@@ -52,17 +55,21 @@
     <main>
       <!-- Home 시작 -->
       <section id="home">
-        <img
-          class="home__avatar"
-          src="./images/profile.jpg"
-          alt="Ryuzy's profile"
-        />
-        <h2 class="home__title">
-          안녕하세요!<br />
-          <strong class="home__title--string">NokCha</strong>입니다.
-        </h2>
-        <p class="home__description">우주에서 가장 뛰어난 AI, NokCha입니다!!</p>
-        <a class="home__contact" href="#contact">연락처</a>
+        <div class="home__container">
+          <img
+            class="home__avatar"
+            src="./images/profile.jpg"
+            alt="Ryuzy's profile"
+          />
+          <h2 class="home__title">
+            안녕하세요!<br />
+            <strong class="home__title--strong">NoKCha</strong>입니다.
+          </h2>
+          <p class="home__description">
+            우주에서 가장 뛰어난 AI 개발자 류지입니다!!
+          </p>
+          <a class="home__contact" href="#contact">연락처</a>
+        </div>
       </section>
       <!-- Home 끝 -->
 
@@ -70,42 +77,44 @@
       <section id="about" class="section max-container">
         <h2 class="title">NokCha</h2>
         <p class="description">
-          NokCha A.I. is an Artificial Intelligence, which is made in 2002.
-          Since then, it have learned natural language and machine language.
-          Especially, it almost mastered Korean,but because of some error of
-          vocal organ, it says nasal sound. It's trying to fix that err.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+          earum fuga quam delectus eius? Dolores ut nihil rerum vero sed eum
+          ipsa cum ea ipsam, eligendi dolorum corrupti quidem odio? Lorem ipsum,
+          dolor sit amet consectetur adipisicing elit. Impedit non eaque et
+          earum libero omnis minima quisquam adipisci error quos hic obcaecati,
+          id tenetur voluptate facere beatae assumenda expedita alias!
         </p>
-        <ul class="skills">
-          <li class="skill">
-            <i class="fa-brands fa-html5 skill__icon"></i>
-            <p class="skill__title">Front-end</p>
+        <ul class="majors">
+          <li class="major">
+            <i class="fa-brands fa-html5 major__icon"></i>
+            <p class="major__title">Front-end</p>
             <p>HTML, CSS, JavaScript, Node.js, React</p>
           </li>
-          <li class="skill">
-            <i class="fa-solid fa-mobile skill__icon"></i>
-            <p class="skill__title">Mobile</p>
+          <li class="major">
+            <i class="fa-solid fa-mobile major__icon"></i>
+            <p class="major__title">Mobile</p>
             <p>Android, IOS, Kotlin, React-Native</p>
           </li>
-          <li class="skill">
-            <i class="fa-solid fa-rocket skill__icon"></i>
-            <p class="skill__title">AI</p>
+          <li class="major">
+            <i class="fa-solid fa-rocket major__icon"></i>
+            <p class="major__title">AI</p>
             <p>Tensorflow, Python, Pytorch, Numpy</p>
           </li>
         </ul>
 
         <ul class="jobs">
           <li class="job">
-            <img class="job__img" src="./images/AD.png" alt="NCSoft Logo" />
+            <img class="job__img" src="./images/nc.png" alt="NCSoft Logo" />
             <div>
-              <p class="job__name">소프트웨어 개발</p>
-              <p class="job__period">2023 ~ 재직중</p>
+              <p class="job__name">엔씨소프트 시스템 엔지니어</p>
+              <p class="job__period">2015 ~ 2017</p>
             </div>
           </li>
           <li class="job">
-            <img class="job__img" src="./images/spaceX.png" alt="SK Logo" />
+            <img class="job__img" src="./images/sk.png" alt="SK Logo" />
             <div>
-              <p class="job__name">인공위성 항로 계산 프로그램 개발</p>
-              <p class="job__period">화성 갈끄니까~</p>
+              <p class="job__name">SK 플랫폼 엔지니어</p>
+              <p class="job__period">2012 ~ 2015</p>
             </div>
           </li>
         </ul>
@@ -123,60 +132,55 @@
             cupiditate distinctio, temporibus maxime quia, blanditiis eaque?
             Facere, ullam fuga.
           </p>
-          <div class="tools">
-            <section class="tools__coding">
-              <h3 class="tools__title">언어</h3>
+          <div class="skills">
+            <section class="skills__coding">
+              <h3 class="skills__title">언어</h3>
               <ul>
                 <li class="bar">
                   <div class="bar__metadata">
-                    <span class="tools__text">HTML</span
-                    ><span class="tools__text">40%</span>
+                    <span>HTML</span><span>100%</span>
                   </div>
                   <div class="bar__bg">
-                    <div class="bar__value" style="width: 40%"></div>
+                    <div class="bar__value" style="width: 100%"></div>
                   </div>
                 </li>
                 <li class="bar">
                   <div class="bar__metadata">
-                    <span class="tools__text">CSS</span
-                    ><span class="tools__text">40%</span>
+                    <span>CSS</span><span>90%</span>
                   </div>
                   <div class="bar__bg">
-                    <div class="bar__value" style="width: 40%"></div>
+                    <div class="bar__value" style="width: 90%"></div>
                   </div>
                 </li>
                 <li class="bar">
                   <div class="bar__metadata">
-                    <span class="tools__text">JavaScript</span
-                    ><span class="tools__text">10%</span>
+                    <span>JavaScript</span><span>80%</span>
                   </div>
                   <div class="bar__bg">
-                    <div class="bar__value" style="width: 10%"></div>
+                    <div class="bar__value" style="width: 80%"></div>
                   </div>
                 </li>
                 <li class="bar">
                   <div class="bar__metadata">
-                    <span class="tools__text">Java</span
-                    ><span class="tools__text">0%</span>
+                    <span>Java</span><span>70%</span>
                   </div>
                   <div class="bar__bg">
-                    <div class="bar__value" style="width: 1%"></div>
+                    <div class="bar__value" style="width: 70%"></div>
                   </div>
                 </li>
                 <li class="bar">
                   <div class="bar__metadata">
-                    <span class="tools__text">Python</span
-                    ><span class="tools__text">10%</span>
+                    <span>Python</span><span>90%</span>
                   </div>
                   <div class="bar__bg">
-                    <div class="bar__value" style="width: 10%"></div>
+                    <div class="bar__value" style="width: 90%"></div>
                   </div>
                 </li>
               </ul>
             </section>
 
-            <section class="tools__tools">
-              <h3 class="tools__title">도구</h3>
+            <section class="skills__tools">
+              <h3 class="skills__title">도구</h3>
               <ul>
                 <li>Visual Studio Code</li>
                 <li>IntelliJ</li>
@@ -186,8 +190,8 @@
               </ul>
             </section>
 
-            <section class="tools_etc">
-              <h3 class="tools__title">기타</h3>
+            <section class="skills_etc">
+              <h3 class="skills__title">기타</h3>
               <ul>
                 <li>Git</li>
                 <li>SLACK</li>
@@ -206,22 +210,22 @@
           <p class="description">Projects</p>
           <ul class="categories">
             <li>
-              <button class="category category--selected">
+              <button class="category category--selected" data-category="all">
                 ALL <span class="category__count">10</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="front-end">
                 Front-end <span class="category__count">3</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="mobile">
                 Mobile <span class="category__count">3</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="ai">
                 AI <span class="category__count">4</span>
               </button>
             </li>
@@ -234,100 +238,100 @@
                   alt="project 이미지"
                   class="project__img"
                 />
-                <div>
-                  <h3 class="project__metadata">Project #1</h3>
-                  <p class="project__title">티맵</p>
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #1</h3>
+                  <p>티맵</p>
                 </div>
               </a>
             </li>
-            <li>
+            <li class="project">
               <a href="#" target="_blank">
                 <img
                   src="./images/Tmap.jpg"
                   alt="project 이미지"
                   class="project__img"
                 />
-                <div>
-                  <h3 class="project__metadata">Project #1</h3>
-                  <p class="project__title">티맵</p>
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #1</h3>
+                  <p>티맵</p>
                 </div>
               </a>
             </li>
-            <li>
+            <li class="project">
               <a href="#" target="_blank">
                 <img
                   src="./images/Tmap.jpg"
                   alt="project 이미지"
                   class="project__img"
                 />
-                <div>
-                  <h3 class="project__metadata">Project #1</h3>
-                  <p class="project__title">티맵</p>
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #1</h3>
+                  <p>티맵</p>
                 </div>
               </a>
             </li>
-            <li>
+            <li class="project">
               <a href="#" target="_blank">
                 <img
                   src="./images/Tmap.jpg"
                   alt="project 이미지"
                   class="project__img"
                 />
-                <div>
-                  <h3 class="project__metadata">Project #1</h3>
-                  <p class="project__title">티맵</p>
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #1</h3>
+                  <p>티맵</p>
                 </div>
               </a>
             </li>
-            <li>
+            <li class="project">
               <a href="#" target="_blank">
                 <img
                   src="./images/Tmap.jpg"
                   alt="project 이미지"
                   class="project__img"
                 />
-                <div>
-                  <h3 class="project__metadata">Project #1</h3>
-                  <p class="project__title">티맵</p>
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #1</h3>
+                  <p>티맵</p>
                 </div>
               </a>
             </li>
-            <li>
+            <li class="project">
               <a href="#" target="_blank">
                 <img
                   src="./images/Tmap.jpg"
                   alt="project 이미지"
                   class="project__img"
                 />
-                <div>
-                  <h3 class="project__metadata">Project #1</h3>
-                  <p class="project__title">티맵</p>
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #1</h3>
+                  <p>티맵</p>
                 </div>
               </a>
             </li>
-            <li>
+            <li class="project">
               <a href="#" target="_blank">
                 <img
                   src="./images/Tmap.jpg"
                   alt="project 이미지"
                   class="project__img"
                 />
-                <div>
-                  <h3 class="project__metadata">Project #1</h3>
-                  <p class="project__title">티맵</p>
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #1</h3>
+                  <p>티맵</p>
                 </div>
               </a>
             </li>
-            <li>
+            <li class="project">
               <a href="#" target="_blank">
                 <img
                   src="./images/Tmap.jpg"
                   alt="project 이미지"
                   class="project__img"
                 />
-                <div>
-                  <h3 class="project__metadata">Project #1</h3>
-                  <p class="project__title">티맵</p>
+                <div class="project__metadata">
+                  <h3 class="project__title">Project #1</h3>
+                  <p>티맵</p>
                 </div>
               </a>
             </li>
@@ -348,7 +352,7 @@
               alt="정보처리기사 자격증"
             />
             <div class="license__bubble">
-              <p><a href="#"></a>산업인력공단</p>
+              <p><a href="#" class="license__bubble__name">산업인력공단</a></p>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
                 hic minima tenetur quasi necessitatibus natus, quisquam autem
@@ -361,10 +365,10 @@
             <img
               class="license__img"
               src="./images/license.png"
-              alt="데이터분석기사 자격증"
+              alt="정보처리기사 자격증"
             />
             <div class="license__bubble">
-              <p><a href="#"></a>한국데이터산업진흥원</p>
+              <p><a href="#" class="license__bubble__name">산업인력공단</a></p>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
                 hic minima tenetur quasi necessitatibus natus, quisquam autem
@@ -377,10 +381,10 @@
             <img
               class="license__img"
               src="./images/license.png"
-              alt="ADSP 자격증"
+              alt="정보처리기사 자격증"
             />
             <div class="license__bubble">
-              <p><a href="#"></a>한국데이터산업진흥원</p>
+              <p><a href="#" class="license__bubble__name">산업인력공단</a></p>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
                 hic minima tenetur quasi necessitatibus natus, quisquam autem
@@ -395,7 +399,7 @@
 
       <!-- Arrow Up 시작 -->
       <aside>
-        <a class="arrow-up" href="#home" title="위로">
+        <a href="#home" class="arrow-up" title="위로">
           <i class="fa-solid fa-arrow-up"></i>
         </a>
       </aside>
@@ -404,15 +408,15 @@
     <!-- Main 끝 -->
 
     <!-- Footer 시작 -->
-    <footer id="contact">
+    <footer id="contact" class="section">
       <div class="max-container">
         <h2 class="title">연락주세요!</h2>
-        <p class="description">rlatlsaud438@gmail.com</p>
+        <p class="description">ryuzy@naver.com</p>
         <ul class="contact__links">
           <li>
             <a
               class="contact__link"
-              href="https://github.com/NokChaLatte438"
+              href="https://github.com/ryuzypia"
               target="_blank"
               title="깃허브"
               ><i class="fa-brands fa-github"></i
@@ -421,14 +425,14 @@
           <li>
             <a
               class="contact__link"
-              href="https://github.com/nokchalatte438"
+              href="https://github.com/ryuzypia"
               target="_blank"
               title="깃허브"
               ><i class="fa-brands fa-github"></i
             ></a>
           </li>
         </ul>
-        <p>&copy; NokCha - All rights reserved</p>
+        <p>&copy; Ryuzy - All rights reserved</p>
       </div>
     </footer>
     <!-- Footer 끝 -->
